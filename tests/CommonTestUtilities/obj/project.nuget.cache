@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "g5IetmJNqX4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\RodolfoOliveira\\Desktop\\Repos\\.net\\CashFlow\\tests\\CommonTestUtilities\\CommonTestUtilities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RodolfoOliveira\\.nuget\\packages\\bogus\\35.5.1\\bogus.35.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}
