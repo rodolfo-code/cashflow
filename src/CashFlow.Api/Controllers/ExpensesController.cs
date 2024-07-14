@@ -43,9 +43,6 @@ public class ExpensesController : ControllerBase
     {
         var response = await useCase.Execute(id);
 
-         if (response is not null)
-            return Ok(response);
-
-        return NotFound();
+        return Ok(response);
     }
 }
