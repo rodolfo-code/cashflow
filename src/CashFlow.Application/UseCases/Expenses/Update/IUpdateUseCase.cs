@@ -4,5 +4,5 @@ using CashFlow.Communication.Responses;
 namespace CashFlow.Application.UseCases.Expenses.Update;
 public interface IUpdateUseCase
 {
-    Task<ResponseRegisteredExpenseJson> Execute(int id, RequestExpenseJson request);
+    Task Execute(int id, RequestExpenseJson request);
 }
