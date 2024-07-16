@@ -14,3 +14,4 @@ C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Infrastructure
 C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Infrastructure\obj\Debug\net8.0\CashFlow.Infrastructure.pdb
 C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Infrastructure\obj\Debug\net8.0\ref\CashFlow.Infrastructure.dll
 C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Infrastructure\obj\Debug\net8.0\CashFlow.Infrastructure.sourcelink.json
+C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Infrastructure\bin\Debug\net8.0\pt-BR\CashFlow.Domain.resources.dll
