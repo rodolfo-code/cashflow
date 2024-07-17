@@ -53,6 +53,7 @@ internal class ExpensesRepository : IExpensesReadOnlyRepository, IExpensesWriteO
 
         var dayInMonth = DateTime.DaysInMonth(year: date.Year, month: date.Month);
         var endDate = new DateTime(year: date.Year, month: date.Month, day: dayInMonth, hour: 23, minute: 59, second: 59);
+
         return await _dbContext
             .Expenses
             .AsNoTracking()
