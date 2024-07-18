@@ -21,3 +21,6 @@ C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Exception\obj\
 C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Exception\obj\Debug\net8.0\pt-BR\CashFlow.Exception.resources.dll
 C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Exception\obj\Debug\net8.0\pt-PT\CashFlow.Exception.resources.dll
 C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Exception\obj\Debug\net8.0\CashFlow.Exception.ResourceErrorMessages.fr.resources
+C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Exception\obj\Debug\net8.0\fr\CashFlow.Exception.resources.cs
+C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Exception\obj\Debug\net8.0\pt-BR\CashFlow.Exception.resources.cs
+C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Exception\obj\Debug\net8.0\pt-PT\CashFlow.Exception.resources.cs
