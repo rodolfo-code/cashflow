@@ -61,7 +61,7 @@ namespace CashFlow.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a The amount should be greater than zero !.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The amount must be greater than zero.
         /// </summary>
         public static string AMOUNT_MUST_BE_GREATER_THAN_ZERO {
             get {
@@ -70,7 +70,25 @@ namespace CashFlow.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a Expense not found !.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The email cannot be empty..
+        /// </summary>
+        public static string EMAIL_EMPTY {
+            get {
+                return ResourceManager.GetString("EMAIL_EMPTY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The email is invalid..
+        /// </summary>
+        public static string EMAIL_INVALID {
+            get {
+                return ResourceManager.GetString("EMAIL_INVALID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Expense not found.
         /// </summary>
         public static string EXPENSE_NOT_FOUND {
             get {
@@ -79,7 +97,7 @@ namespace CashFlow.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a Expenses cannot be for the future !.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Expenses cannot be for the future.
         /// </summary>
         public static string EXPENSES_CANNOT_FOR_BE_THE_FUTURE {
             get {
@@ -88,7 +106,25 @@ namespace CashFlow.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a Payment type is not valid !.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Your password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, and one number..
+        /// </summary>
+        public static string INVALID_PASSWORD {
+            get {
+                return ResourceManager.GetString("INVALID_PASSWORD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The name cannot be empty..
+        /// </summary>
+        public static string NAME_EMPTY {
+            get {
+                return ResourceManager.GetString("NAME_EMPTY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Payment Type is not valid..
         /// </summary>
         public static string PAYMENT_TYPE_INVALID {
             get {
@@ -97,7 +133,7 @@ namespace CashFlow.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a The title is required !.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The title is required..
         /// </summary>
         public static string TITLE_REQUIRED {
             get {
@@ -106,7 +142,7 @@ namespace CashFlow.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a Unknown error !.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Unknown error.
         /// </summary>
         public static string UNKNOWN_ERROR {
             get {
