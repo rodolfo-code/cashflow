@@ -24,17 +24,13 @@ public class RegisterUserUseCase : IRegisterUserUseCase
         validate(request);
 
         var user = _mapper.Map<User>(request);
+        user.UserIdentifier = Guid.NewGuid();
 
-        return new ResponseRegisteredUserJson
-        {
-            Name = user.Name
-        };
+        await _repository.Add(user);
 
-        //await _repository.Add(entity);
+        await _unitOfWork.Commit();
 
-        //await _unitOfWork.Commit();
-
-        //return _mapper.Map<ResponseRegisteredUserJson>(entity);
+        return _mapper.Map<ResponseRegisteredUserJson>(user);
     }
 
     private void validate(RequestRegisterUserJson request)
