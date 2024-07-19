@@ -19,9 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashFlow.Exception", "src\C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashFlow.Infrastructure", "src\CashFlow.Infrastructure\CashFlow.Infrastructure.csproj", "{E30438A3-4045-4B4B-A61E-3E467B2FC973}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validators.Tests", "tests\Validators.Tests\Validators.Tests.csproj", "{5498DCEC-EB85-4C89-AAA9-255B0D5EA774}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Validators.Tests", "tests\Validators.Tests\Validators.Tests.csproj", "{5498DCEC-EB85-4C89-AAA9-255B0D5EA774}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonTestUtilities", "tests\CommonTestUtilities\CommonTestUtilities.csproj", "{C5FA8226-9090-41D0-9CB3-9D59D4FCC8E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonTestUtilities", "tests\CommonTestUtilities\CommonTestUtilities.csproj", "{C5FA8226-9090-41D0-9CB3-9D59D4FCC8E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseCases.Test", "tests\UseCases.Test\UseCases.Test.csproj", "{82DB95FF-466D-4A6F-B02B-CF0890A1482B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,10 @@ Global
 		{C5FA8226-9090-41D0-9CB3-9D59D4FCC8E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5FA8226-9090-41D0-9CB3-9D59D4FCC8E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5FA8226-9090-41D0-9CB3-9D59D4FCC8E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82DB95FF-466D-4A6F-B02B-CF0890A1482B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82DB95FF-466D-4A6F-B02B-CF0890A1482B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82DB95FF-466D-4A6F-B02B-CF0890A1482B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82DB95FF-466D-4A6F-B02B-CF0890A1482B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +80,7 @@ Global
 		{E30438A3-4045-4B4B-A61E-3E467B2FC973} = {94472268-F0F6-4602-840D-726D7C23618E}
 		{5498DCEC-EB85-4C89-AAA9-255B0D5EA774} = {64234975-BE86-4351-9AE1-DCEFB61C087D}
 		{C5FA8226-9090-41D0-9CB3-9D59D4FCC8E7} = {64234975-BE86-4351-9AE1-DCEFB61C087D}
+		{82DB95FF-466D-4A6F-B02B-CF0890A1482B} = {64234975-BE86-4351-9AE1-DCEFB61C087D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6B40C7A6-0589-4F62-88FC-1A0EA5DF718F}

@@ -301,8 +301,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Users\\RodolfoOliveira\\Desktop\\Repos\\.net\\CashFlow\\src\\CashFlow.Application\\CashFlow.Application.csproj": {
+                "projectPath": "C:\\Users\\RodolfoOliveira\\Desktop\\Repos\\.net\\CashFlow\\src\\CashFlow.Application\\CashFlow.Application.csproj"
+              },
               "C:\\Users\\RodolfoOliveira\\Desktop\\Repos\\.net\\CashFlow\\src\\CashFlow.Communication\\CashFlow.Communication.csproj": {
                 "projectPath": "C:\\Users\\RodolfoOliveira\\Desktop\\Repos\\.net\\CashFlow\\src\\CashFlow.Communication\\CashFlow.Communication.csproj"
+              },
+              "C:\\Users\\RodolfoOliveira\\Desktop\\Repos\\.net\\CashFlow\\src\\CashFlow.Domain\\CashFlow.Domain.csproj": {
+                "projectPath": "C:\\Users\\RodolfoOliveira\\Desktop\\Repos\\.net\\CashFlow\\src\\CashFlow.Domain\\CashFlow.Domain.csproj"
               }
             }
           }
@@ -325,6 +331,10 @@
             "Bogus": {
               "target": "Package",
               "version": "[35.5.1, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
             }
           },
           "imports": [

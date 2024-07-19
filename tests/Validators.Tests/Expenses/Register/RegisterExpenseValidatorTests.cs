@@ -1,5 +1,4 @@
-﻿//using CashFlow.Communication.Enums;
-using CashFlow.Application.UseCases;
+﻿using CashFlow.Application.UseCases;
 using CashFlow.Communication.Enums;
 using CashFlow.Exception;
 using CommonTestUtilities.Requests;
@@ -83,7 +82,8 @@ public class RegisterExpenseValidatorTests
     result.Errors.Should().ContainSingle()
             .And.ContainSingle(e => e.ErrorMessage.Equals(ResourceErrorMessages.PAYMENT_TYPE_INVALID));
     }
-[InlineData(0)]
+
+    [InlineData(0)]
     [InlineData(-1)]
     [InlineData(-10_000)]
     [Trait("Validators", "Register Expense Validator")]
