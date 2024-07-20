@@ -120,6 +120,9 @@
   <data name="AMOUNT_MUST_BE_GREATER_THAN_ZERO" xml:space="preserve">
     <value>The amount must be greater than zero</value>
   </data>
+  <data name="EMAIL_ALREADY_REGISTERED" xml:space="preserve">
+    <value>This e-mail is already been used.</value>
+  </data>
   <data name="EMAIL_EMPTY" xml:space="preserve">
     <value>The email cannot be empty.</value>
   </data>
@@ -133,7 +136,7 @@
     <value>Expense not found</value>
   </data>
   <data name="INVALID_PASSWORD" xml:space="preserve">
-    <value>Your password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, and one number.</value>
+    <value>Your password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character (!, ?, *, ., @)</value>
   </data>
   <data name="NAME_EMPTY" xml:space="preserve">
     <value>The name cannot be empty.</value>
