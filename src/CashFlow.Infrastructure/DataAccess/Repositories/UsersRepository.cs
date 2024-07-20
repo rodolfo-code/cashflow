@@ -6,10 +6,7 @@ namespace CashFlow.Infrastructure.DataAccess.Repositories;
 internal class UsersRepository : IUsersWriteOnlyRepository, IUserReadOnlyRepository
 {
     private readonly CashFlowDbContext _dbContext;
-    public UsersRepository(CashFlowDbContext dbContext)
-    {
-        _dbContext = dbContext;
-    }
+    public UsersRepository(CashFlowDbContext dbContext) => _dbContext = dbContext;
 
     public async Task Add(User user)
     {
