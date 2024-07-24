@@ -6,9 +6,9 @@ using FluentAssertions;
 namespace Validators.Tests.Users.Register;
 public class RegisterUserValidatorTest
 {
-    [Fact(DisplayName = nameof(Register_Success))]
+    [Fact(DisplayName = nameof(Register_Validator_Success))]
     [Trait("Validators", "Register User Validator")]
-    public void Register_Success()
+    public void Register_Validator_Success()
     {
         // Arrange
         var validator = new RegisterUserValidator();
