@@ -83,6 +83,7 @@ public class RegisterExpenseValidatorTests
             .And.ContainSingle(e => e.ErrorMessage.Equals(ResourceErrorMessages.PAYMENT_TYPE_INVALID));
     }
 
+    [Theory(DisplayName = nameof(Error_When_Amount_Is_Zero_Or_Negative))]
     [InlineData(0)]
     [InlineData(-1)]
     [InlineData(-10_000)]

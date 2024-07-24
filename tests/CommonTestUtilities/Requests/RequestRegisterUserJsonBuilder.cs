@@ -2,7 +2,7 @@
 using CashFlow.Communication.Requests;
 
 namespace CommonTestUtilities.Requests;
-public static class RequestRegisterUserJsonBuilder
+public class RequestRegisterUserJsonBuilder
 {
     public static RequestRegisterUserJson Build()
     {

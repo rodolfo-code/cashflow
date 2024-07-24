@@ -20,18 +20,19 @@ public class RegisterUserUseCase : IRegisterUserUseCase
     private readonly IUnitOfWork _unitOfWork;
     private readonly IAccessTokenGenerator _tokenGenerator;
     public RegisterUserUseCase(
+        IMapper mapper,
         IPasswordEncripter passwordEncripter,
         IUserReadOnlyRepository useReadOnlyRepository,
         IUsersWriteOnlyRepository userWriteOnlyRepository, 
-        IUnitOfWork unitOfWork, IMapper mapper,
-        IAccessTokenGenerator tokenGenerator)
+        IAccessTokenGenerator tokenGenerator,
+        IUnitOfWork unitOfWork)
     {
         _mapper = mapper;
         _passwordEncripter = passwordEncripter;
-        _userWriteOnlyRepository = userWriteOnlyRepository;
         _useReadOnlyRepository = useReadOnlyRepository;
-        _unitOfWork = unitOfWork;
+        _userWriteOnlyRepository = userWriteOnlyRepository;
         _tokenGenerator = tokenGenerator;
+        _unitOfWork = unitOfWork;
     }
     public async Task<ResponseRegisteredUserJson> Execute(RequestRegisterUserJson request)
     {
@@ -47,7 +48,6 @@ public class RegisterUserUseCase : IRegisterUserUseCase
 
         var token = _tokenGenerator.Generate(user);
 
-        //return _mapper.Map<ResponseRegisteredUserJson>(user);
         return new ResponseRegisteredUserJson
         {
             Name = user.Name,
