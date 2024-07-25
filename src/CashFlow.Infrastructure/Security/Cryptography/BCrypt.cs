@@ -2,7 +2,7 @@
 using CashFlow.Domain.Security.Cryptography;
 
 namespace CashFlow.Infrastructure.Security.Cryptography;
-public class BCrypt : IPasswordEncripter
+public class BCrypt : IPasswordEncrypter
 {
     public string Encrypt(string password)
     {

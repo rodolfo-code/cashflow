@@ -14,14 +14,14 @@ namespace CashFlow.Application.UseCases.Users.Register;
 public class RegisterUserUseCase : IRegisterUserUseCase
 {
     private readonly IMapper _mapper;
-    private readonly IPasswordEncripter _passwordEncripter;
+    private readonly IPasswordEncrypter _passwordEncripter;
     private readonly IUserReadOnlyRepository _useReadOnlyRepository;
     private readonly IUsersWriteOnlyRepository _userWriteOnlyRepository;
     private readonly IUnitOfWork _unitOfWork;
     private readonly IAccessTokenGenerator _tokenGenerator;
     public RegisterUserUseCase(
         IMapper mapper,
-        IPasswordEncripter passwordEncripter,
+        IPasswordEncrypter passwordEncripter,
         IUserReadOnlyRepository useReadOnlyRepository,
         IUsersWriteOnlyRepository userWriteOnlyRepository, 
         IAccessTokenGenerator tokenGenerator,
