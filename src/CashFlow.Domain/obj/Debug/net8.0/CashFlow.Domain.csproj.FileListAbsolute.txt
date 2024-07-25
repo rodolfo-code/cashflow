@@ -15,4 +15,3 @@ C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Domain\obj\Deb
 C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Domain\obj\Debug\net8.0\CashFlow.Domain.Reports.ResourceReportGenerationMessages.pt-BR.resources
 C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Domain\obj\Debug\net8.0\CashFlow.Domain.csproj.GenerateResource.cache
 C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Domain\obj\Debug\net8.0\pt-BR\CashFlow.Domain.resources.dll
-C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Domain\obj\Debug\net8.0\pt-BR\CashFlow.Domain.resources.cs
