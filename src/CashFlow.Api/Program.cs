@@ -8,8 +8,8 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
 using CashFlow.Infrastructure.Extensions;
-using CashFlow.Domain.Security.Token;
 using CashFlow.Api.Token;
+using CashFlow.Domain.Security.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,7 +17,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(config =>
 {
-    config.AddSecurityDefinition("Bearer Token", new OpenApiSecurityScheme
+    config.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "Authorization",
         Description = @"JWT Authorization header using the Bearer scheme.
@@ -72,6 +72,7 @@ builder.Services.AddAuthentication(config =>
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(signingKey!))
     };
 });
+
 
 var app = builder.Build();
 

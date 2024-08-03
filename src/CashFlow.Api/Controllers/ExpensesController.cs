@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace CashFlow.Api.Controllers;
 
 [Route("api/[controller]")]
-[Authorize]
+//[Authorize]
 [ApiController]
 public class ExpensesController : ControllerBase
 {

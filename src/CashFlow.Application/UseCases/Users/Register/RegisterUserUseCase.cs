@@ -5,7 +5,7 @@ using CashFlow.Domain.Entities;
 using CashFlow.Domain.Repositories;
 using CashFlow.Domain.Repositories.Users;
 using CashFlow.Domain.Security.Cryptography;
-using CashFlow.Domain.Security.Token;
+using CashFlow.Domain.Security.Tokens;
 using CashFlow.Exception;
 using CashFlow.Exception.ExceptionBase;
 using FluentValidation.Results;

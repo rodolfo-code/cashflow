@@ -1,5 +1,5 @@
 ﻿using CashFlow.Domain.Entities;
-using CashFlow.Domain.Security.Token;
+using CashFlow.Domain.Security.Tokens;
 using CashFlow.Domain.Services.LoggedUser;
 using CashFlow.Infrastructure.DataAccess;
 using Microsoft.EntityFrameworkCore;
