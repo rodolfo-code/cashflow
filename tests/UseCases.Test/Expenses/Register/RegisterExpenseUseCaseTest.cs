@@ -7,6 +7,8 @@ using FluentAssertions;
 using CashFlow.Domain.Entities;
 using CashFlow.Exception.ExceptionBase;
 using CashFlow.Exception;
+using CommonTestUtilities;
+using CommonTestUtilities.Entities;
 
 namespace UseCases.Test.Expenses.Register;
 public class RegisterExpenseUseCaseTest
@@ -16,9 +18,10 @@ public class RegisterExpenseUseCaseTest
     [Trait("UseCases", "Register Expense UseCase")]
     public async Task Register_Expense_Successfull()
     {
+        var loggedUser = UserBuilder.Build();
         var request = RequestRegisterExpenseJsonBuilder.Build();
+        var useCase = CreateUseCase(loggedUser);
 
-        var useCase = CreateUseCase();
         var result = await useCase.Execute(request);
 
         result.Should().NotBeNull();
@@ -29,10 +32,12 @@ public class RegisterExpenseUseCaseTest
     [Trait("UseCases", "Register Expense UseCase")]
     public async Task Error_Title_Empty()
     {
+        var loggedUser = UserBuilder.Build();
         var request = RequestRegisterExpenseJsonBuilder.Build();
         request.Title = string.Empty;
 
-        var useCase = CreateUseCase();
+        var useCase = CreateUseCase(loggedUser);
+
         var act = async () => await useCase.Execute(request);
 
         var result = await act.Should().ThrowAsync<ErrorOnValidationException>();
@@ -47,23 +52,27 @@ public class RegisterExpenseUseCaseTest
     [Trait("UseCases", "Register Expense UseCase")]
     public async Task Error_When_Ammount_Less_Than_1(decimal amount)
     {
+
+        var loggedUser = UserBuilder.Build();
         var request = RequestRegisterExpenseJsonBuilder.Build();
         request.Amount = amount;
 
-        var useCase = CreateUseCase();
+
+        var useCase = CreateUseCase(loggedUser);
 
         var act = async () => await useCase.Execute(request);
         var result = await act.Should().ThrowAsync<ErrorOnValidationException>();
         result.Where(ex => ex.GetErrors().Count == 1 && ex.GetErrors().Contains(ResourceErrorMessages.AMOUNT_MUST_BE_GREATER_THAN_ZERO));
     }
 
-    private RegisterExpenseUseCase CreateUseCase()
+    private RegisterExpenseUseCase CreateUseCase(User user)
     {
         var repository = ExpensesWriteOnlyRepositoryBuilder.Build();
         var unitOfWork = UnitOfWorkBuilder.Build();
         var mapper = MapperBuilder.Build();
+        var loggedUser = LoggedUserBuilder.Build(user); ;
 
-        var useCase = new RegisterExpenseUseCase(repository, unitOfWork, mapper);
+        var useCase = new RegisterExpenseUseCase(repository, unitOfWork, mapper, loggedUser);
 
         return useCase;
     }
