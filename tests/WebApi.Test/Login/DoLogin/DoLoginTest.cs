@@ -41,9 +41,6 @@ public class DoLoginTest : IClassFixture<CustomWebApplicationFactory>
 
         responseData.RootElement.GetProperty("name").GetString().Should().Be(_name);
         responseData.RootElement.GetProperty("token").GetString().Should().NotBeNullOrWhiteSpace();
-
     }
-
-
 
 }

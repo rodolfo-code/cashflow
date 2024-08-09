@@ -64,6 +64,6 @@ public class RegisterUserTest : IClassFixture<CustomWebApplicationFactory>
 
         // OU
 
-        errors.Should().HaveCount(1).And.Contain(error => error.GetString()!.Equals(ResourceErrorMessages.NAME_EMPTY));
+        errors.Should().HaveCount(1).And.Contain(error => error.GetString()!.Equals(expectedMessage));
     }
 }
