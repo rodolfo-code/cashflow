@@ -163,3 +163,6 @@ C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Api\bin\Debug\
 C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Api\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
 C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Api\bin\Debug\net8.0\appsettings.Test.json
+C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Api\bin\Debug\net8.0\appsettings.Production.json
+C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Api\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\RodolfoOliveira\Desktop\Repos\.net\CashFlow\src\CashFlow.Api\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
