@@ -53,20 +53,21 @@ public static class DependencyInjectionExtension
     }
     private static void AddDbContext(IServiceCollection services, IConfiguration configuration, string environment)
     {
-        if (environment.Equals("Development", StringComparison.OrdinalIgnoreCase))
-        {
-            var connectionString = configuration.GetConnectionString("Connection");
+        var connectionString = configuration.GetConnectionString("Connection");
 
-            services.AddDbContext<CashFlowDbContext>(config => config.UseSqlServer(connectionString, options => options.EnableRetryOnFailure()));
+        services.AddDbContext<CashFlowDbContext>(config => config.UseSqlServer(connectionString, options => options.EnableRetryOnFailure()));
+        //if (environment.Equals("Development", StringComparison.OrdinalIgnoreCase))
+        //{
 
-        }
-        else
-        {
-            var connectionString = configuration.GetConnectionString("Connection");
 
-            var serverVersion = ServerVersion.AutoDetect(connectionString);
+        //}
+        //else
+        //{
+        //    var connectionString = configuration.GetConnectionString("Connection");
 
-            services.AddDbContext<CashFlowDbContext>(config => config.UseMySql(connectionString, serverVersion));
-        }
+        //    var serverVersion = ServerVersion.AutoDetect(connectionString);
+
+        //    services.AddDbContext<CashFlowDbContext>(config => config.UseMySql(connectionString, serverVersion));
+        //}
     }
 }
