@@ -24,9 +24,11 @@ public static class DependencyInjectionExtension
         AddToken(services, configuration);
         AddRepositories(services);
 
+        var environment = configuration["Settings:Environment"];
+
         if (configuration.IsTestEnvironment() == false)
         {
-            AddDbContext(services, configuration);
+            AddDbContext(services, configuration, environment!);
         }
 
     }
@@ -49,10 +51,22 @@ public static class DependencyInjectionExtension
         services.AddScoped<IUserReadOnlyRepository, UsersRepository>();
         
     }
-    private static void AddDbContext(IServiceCollection services, IConfiguration configuration)
+    private static void AddDbContext(IServiceCollection services, IConfiguration configuration, string environment)
     {
-        var connectionString = configuration.GetConnectionString("Connection");
+        if (environment.Equals("Development", StringComparison.OrdinalIgnoreCase))
+        {
+            var connectionString = configuration.GetConnectionString("Connection");
 
-        services.AddDbContext<CashFlowDbContext>(config => config.UseSqlServer(connectionString, options => options.EnableRetryOnFailure()));
+            services.AddDbContext<CashFlowDbContext>(config => config.UseSqlServer(connectionString, options => options.EnableRetryOnFailure()));
+
+        }
+        else
+        {
+            var connectionString = configuration.GetConnectionString("Connection");
+
+            var serverVersion = ServerVersion.AutoDetect(connectionString);
+
+            services.AddDbContext<CashFlowDbContext>(config => config.UseMySql(connectionString, serverVersion));
+        }
     }
 }
